@@ -7,3 +7,6 @@ https://shashankss1205.github.io/TR.html  the main website starts from here
 https://drive.google.com/file/d/10-CBmSMJ6U7dN9xmq7xhX4zK7BwV6Wd6/view?usp=share_link   video link of the project 
 
 There's a pdf named "Introducing TechnoRento" for the basic tech stack and intro of the website in the repsository.
+
+
+sorry for keeping all files in the main page of the repository . I didn't have much information regarding GITHUB before this event.
