@@ -2,75 +2,89 @@
 <html lang="en">
 
 <head>
+    <link rel="icon" type="image" href=" logo.jpeg">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="chatbox.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <title> TechnoRento_chat box </title>
+    <link rel="stylesheet" href="chatbox.css">
+    <title> TechnoRentochat</title>
 </head>
 
 <body>
 
-    <!--==================== *  Navbar * =============================  -->
-    <div class="hedder">
+
+    <!-- =============================== * navbar * ============================================ -->
+
+    <div class="header">
         <div class="navbar">
-            
+
+
+
+
             <a href="TR.html">
             <img src=" logo.jpeg" >
             </a>
 
 
 
-            <div class="contry_select" id="contry">
+
+
+
+            <div class="country_select" id="country">
                 <div class="select">
                     <p id="text"> Select Your Country </p>
                     <i class="fa-solid fa-chevron-down" id="moving"></i>
                 </div>
 
+
                 <ul class="option_box" id="list">
-                    <li class="option" onclick="Myfunction('USA')">
+                    <li class="option" onclick="myfunction('USA')">
                         <i class="fa-solid fa-location-dot"></i>
                         <p>USA</p>
                     </li>
-                    <li class="option" onclick="Myfunction('Canada')">
+                    <li class="option" onclick="myfunction('Canada')">
                         <i class="fa-solid fa-location-dot"></i>
                         <p>Canada</p>
                     </li>
-                    <li class="option" onclick="Myfunction('India')">
+                    <li class="option" onclick="myfunction('India')">
                         <i class="fa-solid fa-location-dot"></i>
                         <p>India</p>
                     </li>
-                    <li class="option" onclick="Myfunction('Pakistan')">
+                    <li class="option" onclick="myfunction('Russia')">
                         <i class="fa-solid fa-location-dot"></i>
                         <p>Russia</p>
                     </li>
-                    <li class="option" onclick="Myfunction('Nre York')">
+                    <li class="option" onclick="myfunction('Saudi Arabia')">
                         <i class="fa-solid fa-location-dot"></i>
                         <p>Saudi Arabia</p>
                     </li>
                 </ul>
-
             </div>
 
 
 
 
+
             <div class="search_box">
-                <input type="text" class="serchclass" id="serchid" placeholder="Find Cars, Mobile Phone and More......">
-                <p> <i class="fa-solid fa-magnifying-glass"></i></p>
+                <input type="text" class="searchclass" id="searchid" placeholder="Find Laptops, Mobile phones and More....">
+                <p> <i class="fa-solid fa-magnifying-glass"></i> </p>
             </div>
 
 
 
 
             <div class="language">
-                <p id="eng_tag">English</p>
+                <p id="eng_tag"> English </p>
+
                 <ul class="hin_eng">
-                    <li onclick="languageolx('English')"> English </li>
-                    <li onclick="languageolx('हिन्दी')"> हिन्दी </li>
+                    <li onclick="languageTR('English')"> English </li>
+                    <li onclick="languageTR('हिन्दी')">हिन्दी</li>
                 </ul>
+
             </div>
+
+
 
 
             <div class="message">
@@ -86,39 +100,48 @@
 
 
 
-            <div class="your_logo">
+
+
+            <div class="profile">
                 <div class="user_img" id="user_img_id">
                     <img src=" user.jpg">
                 </div>
 
                 <div class="dropdown" id="dropdownid">
+                    
                     <div class="nameandimg">
-                        <img src=" user.jpg">
-                        <p>PShashank Shekhar Singh</p>
+                        <a href=" user.jpg" >
+                          <img src=" user.jpg">
+                        </a>
+                        <p> Shashank Shekhar Singh </p>
                     </div>
-                    <hr>
+                    
+
                     <ul>
                         <li>
-                            <i class="fa-solid fa-user-large"></i>
-                            <p>My Account </p>
+                            <i class="fa-regular fa-user"></i>
+                            <p>My Account</p>
                         </li>
                         <li>
                             <i class="fa-solid fa-box"></i>
-                            <p> My Orders </p>
+                            <p>My Orders</p>
                         </li>
                         <hr>
                         <li>
-                            <i class="fa-solid fa-circle-question"></i>
-                            <p> Help </p>
+                            <i class="fa-regular fa-circle-question"></i>
+                            <a href="help.html" ><p>Help</p></a>
+                        </li>
                         <li>
                             <i class="fa-solid fa-gear"></i>
-                            <p> Setting </p>
+                            <p>Settings</p>
                         </li>
                         <hr>
+
                         <li onclick="logout()">
-                            <i class="fa-solid fa-right-from-bracket"></i>
-                            <p> Log Out </p>
+                            <i class="fa-solid fa-right-from-bracket" ></i>
+                            <p >Log Out</p>
                         </li>
+
                     </ul>
                 </div>
             </div>
@@ -126,13 +149,17 @@
 
 
 
+            <a href="formforrent.html">
             <div class="selling_page">
-                <button> <i class="fa-solid fa-plus"></i> RENT</button>
+                <button> <i class="fa-solid fa-plus"></i>
+                    <p>RENT</p>
+                </button>
             </div>
-
+        </a>    
 
         </div>
     </div>
+
 
 
 
@@ -156,30 +183,39 @@
         <div class="send_message">
             <input type="text" placeholder="Type a message" id="text_message">
             <input type="text" placeholder="Type a message" id="demo">
-            <i class="fa-solid fa-paper-plane" id="sand_icon"></i>
+            <i class="fa-solid fa-paper-plane" id="send_icon"></i>
         </div>
 
 
     </div>
 
 
-
     <script>
-        // ==================== *  Navbar * ============================= 
 
-        let contry = document.getElementById('contry');
+
+
+
+        function logout() {
+        window.location.replace("thanks.html");
+        }
+
+
+
+        //  =============================== * navbar * ============================================
+
+        let country = document.getElementById('country');
         let moving = document.getElementById('moving');
         let text = document.getElementById('text');
         let list = document.getElementById('list');
 
-        contry.addEventListener('click', () => {
-            list.classList.toggle('hidden');
-            moving.classList.toggle('roted');
-        });
-        function Myfunction(omkar) {
-            text.innerHTML = omkar;
-        }
 
+        country.addEventListener('click', () => {
+            list.classList.toggle('hidden');
+            moving.classList.toggle('rotate')
+        });
+        function myfunction(variable) {
+            text.innerHTML = variable;
+        }
 
 
         let eng_tag = document.getElementById('eng_tag');
@@ -190,30 +226,30 @@
         language.addEventListener('click', () => {
             hin_eng.classList.toggle('display_div');
         });
-        function languageolx(anyone) {
+        function languageTR(anyone) {
             eng_tag.innerHTML = anyone;
         }
 
-
-
-        let girl_img_id = document.getElementById('girl_img_id');
+        let user_img_id = document.getElementById('user_img_id');
         let dropdownid = document.getElementById('dropdownid');
 
-        girl_img_id.addEventListener('click', () => {
-            dropdownid.classList.toggle('blobkdis');
+        user_img_id.addEventListener('click', () => {
+            dropdownid.classList.toggle('block_div')
         });
+
+
 
 
 
         // ==================== *  chat box * ============================= 
 
-        let sand_icon = document.getElementById('sand_icon');
+        let send_icon = document.getElementById('send_icon');
         let message = document.getElementById('message');
         let text_message = document.getElementById('text_message');
         let demo = document.getElementById('demo');
 
 
-        sand_icon.addEventListener('click', () => {
+        send_icon.addEventListener('click', () => {
             message.innerHTML = text_message.value;
             message.style = 'display: block';
             text_message.value = demo.value

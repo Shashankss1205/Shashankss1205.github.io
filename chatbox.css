@@ -2,22 +2,16 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    font-family: Arial,Helvetica,sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
-    background-color: #f2f4f5;
-}
+/* <!-- =============================== * navbar * ============================================ --> */
 
-
-/* ==================== *  Navbar * ============================= */
-
-.hedder{
+.header{
     background-color: #f7f8f9;
     box-shadow: 0 0 2px grey;
     position: sticky;
     top: 0%;
-    z-index: 3;
 }
 .navbar{
     display: flex;
@@ -26,30 +20,29 @@ body{
     margin: auto;
 }
 
-.navbar img{
-    width: 70px;
+.navbar img{ 
+ width: 140px;
 }
 
 
 
-
-.contry_select{
+.country_select{
     width: 250px;
     margin-left: 70px;
 }
-.select i {
+.select i{
     font-size: 15px;
     transition: all 0.3s;
 }
 .select{
     width: 100%;
-    padding: 10px 10px; 
-    background-color: rgba(255, 255, 255, 0.7); 
-     border-radius: 6px;
+    padding: 10px 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 6px;
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     border: 2px solid black;
 }
 .option{
@@ -59,7 +52,7 @@ body{
     cursor: pointer;
 }
 .option:hover{
-    background-color: #c7dcff;
+      background-color: #c7dcff;
 }
 .option p{
     margin-left: 10px;
@@ -67,11 +60,10 @@ body{
 }
 .option i{
     color: #839a9c;
-    font-size: 18px;
 }
 .option_box{
     box-shadow: 0 0 10px grey;
-    background-color: white;
+    background-color: white; 
     display: none;
     position: absolute;
     top: 60px;
@@ -80,7 +72,7 @@ body{
     display: block;
 }
 .roted{
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 
@@ -94,17 +86,17 @@ body{
     background-color: black;
     color: white;
     padding: 14px;
+    font-size: 15px;
     border-radius: 0 6px 6px 0;
     cursor: pointer;
 }
-.serchclass{
+.searchclass{
     padding: 10px;
     width: 400px;
     font-size: 15px;
     border: 2px solid black;
     border-radius: 6px 0 0 6px;
 }
-
 
 
 
@@ -117,17 +109,17 @@ body{
 .hin_eng{
     background-color: white;
     box-shadow: 0 0 10px grey;
-    display: none;
     width: 130px;
+    display: none;
     position: absolute;
     top: 60px;
 }
 .hin_eng li{
-    list-style: none;
-    padding: 10px 20px;
-    margin-top: 10px;
- }
- .hin_eng li:hover{
+   list-style: none;
+   padding: 10px 20px;
+   margin-top: 10px;
+}
+.hin_eng li:hover{
     background-color: #c7dcff;
 }
 .display_div{
@@ -137,23 +129,25 @@ body{
 
 
 
-.messeage i{
+
+.message i{
     font-size: 22px;
     color: black;
     cursor: pointer;
     margin-left: 25px;
- }
-
-
-
-
- .your_logo{
-    margin-left: 55px;
 }
-.girl_img img{
+.notification i{
+    font-size: 22px;
+    color: black;
+    cursor: pointer;
+    margin-left: 25px;
+}
+
+.user_img img{
     width: 55px;
     border-radius: 50%;
     cursor: pointer;
+    margin-left: 55px;
 }
 .nameandimg img{
     width: 65px;
@@ -162,7 +156,6 @@ body{
 .nameandimg p{
     font-size: 18px;
     font-weight: bold;
-    margin-left: 10px;
 }
 .nameandimg{
     display: flex;
@@ -171,12 +164,13 @@ body{
 }
 .dropdown{
     width: 250px;
-    display: none;
     box-shadow: 0 0 10px grey;
     padding: 15px;
     background-color: white;
+    display: none;
     position: absolute;
     top: 60px;
+    z-index: 100;
 }
 .dropdown ul li{
     display: flex;
@@ -196,17 +190,15 @@ body{
 }
 .dropdown ul li p{
     margin-left: 10px;
-    font-size: 17px;
+  font-size: 17px;
 }
-.blobkdis{
+.block_div{
     display: block;
 }
 
 
-
-
-
 .selling_page button{
+    margin-left: 25px;
     border-style:solid ;
     border-width: 5px;
     border-top-color: #23e5db;
@@ -218,10 +210,9 @@ body{
     padding: 6px 12px;
     border-radius: 30px;
     background-color: white;
-   color: black;
-   margin-left: 30px;
+    color: black;
+    display: flex;
 }
-
 
 
 /* ==================== *  chat box * ============================= */
